@@ -10,7 +10,7 @@
             {
                 id: 2,
                 name: "Calça jeans feminina wide slim cintura média",
-                price: 49.90,
+                price: 159.90,
                 image: "image/Calça jeans feminina wide slim cintura média.avif"
             },
             {
@@ -58,7 +58,7 @@
             {
                 id: 10,
                 name: "Vestido midi evasê em viscose com recorte floral - branco",
-                price: 49.99,
+                price: 150.99,
                 image: "image/Vestido midi evasê em viscose com recorte floral - branco.avif"
             },
             {
