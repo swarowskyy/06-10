@@ -22,7 +22,19 @@
             top: 0;
             z-index: 100;
         }
-
+        table{
+            margin: 0 auto;
+            width: 50%;
+            border-collapse: collapse;
+        }
+        tr,td,th{
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even){
+           background-color:#ddd;
+        }
         .header-container {
             display: flex;
             justify-content: space-between;
