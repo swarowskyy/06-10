@@ -13,12 +13,12 @@
             <div class="logo">Do Fio <span>ao Pavio</span></div>
             <nav>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#products">Produtos</a></li>
-                    <li><a href="novidades.html">Novidades</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><a href="#fidelidade">Fidelidade</a></li>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#products">Produtos</a></li>
+                    <li><a href="#products">Novidades</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                    <li><a href="index.html#fidelidade">Fidelidade</a></li>
                     <li class="cart-icon" id="cart-icon">
                         Carrinho
                         <span class="cart-count" id="cart-count">0</span>
@@ -28,20 +28,7 @@
         </div>
     </header>
 
-    <!-- Banner principal -->
-    <section class="hero">
-        <h1>Do básico à atitude: Seu estilo, de Fio a Pavio.</h1>
-        <p>Bem-vindo(a) à De Fio a Pavio, onde acreditamos que o estilo se constrói do zero.</p>
-        <a href="#products" class="btn">Ver Produtos</a>
-    </section>
-
-    <!-- Seção de produtos -->
-    <section class="products" id="products">
-        <h2 class="section-title">Nossos Produtos</h2>
-        <div class="products-grid" id="products-grid">
-            <!-- Os produtos serão inseridos via JavaScript -->
-        </div>
-    </section>
+    
 
     <!-- Carrinho lateral -->
     <div class="overlay" id="overlay"></div>
@@ -59,9 +46,19 @@
         <button class="checkout-btn">Finalizar Compra</button>
     </div>
 
-    <section id="sobre" class="products">
-        <h2 class="section-title">Sobre Nós</h2>
-        <p>A De Fio a Pavio não nasceu de um plano de negócios, mas de uma frustração: a dificuldade de encontrar uma loja que oferecesse qualidade e atitude no mesmo lugar. Percebemos que as pessoas eram forçadas a escolher: ou o básico confiável, ou a peça de tendência que dura uma estação.</p>
+    <section id="cadrastro" class="products">
+        <h2 class="section-title">Receba nossas promoções!</h2>
+        <p>Cadastre e receba suas promoções.</p>
+        <form method="post">
+            <label>Nome Completo</label>
+            <input type="text" id="nome" placeholder="nome aqui" required><br>
+            <label>E-mail</label>
+            <input type="email" id="email" placeholder="E-mail aqui" required>
+            <label>Número de Telefone</label>
+            <input type="tel" id="telefone" placeholder="telefone aqui" required>
+            <button>Cadastrar</button>
+           
+        </form>
     </section>
     <section id="fidelidade" class="products">
         <h2 class="section-title">Fidelidade</h2>
@@ -71,35 +68,7 @@
             Como Funciona: Acenda seus Pontos (Fios)
             O programa é baseado em pontos, chamados de Fios, que o cliente acumula e troca por recompensas de maior valor (o "Pavio").</p>
     </section>
-    <section id="contato" class="products">
-        <h2 class="section-title">Contato</h2>
-        <table> 
-            <tr>
-                <th>UF</th>
-                <th>Cidade</th>
-                <th>Endereço</th>
-                <th>Contato</th>
-            </tr>
-            <tr> 
-                <td>SC</td>
-                <td> Rio do Sul</td>
-                <td> Av. Oscar Barcelos, 123, Centro</td>
-                <td> (47) 3525-1234</td>
-            </tr>
-            <tr> 
-                <td>SP</td>
-                <td> Águas da Prata</td>
-                <td> Av. Washington, 1327, Centro</td>
-                <td> (19) 3642-1327</td>
-            </tr>
-            <tr> 
-                <td>SC</td>
-                <td> Treze Tílhas</td>
-                <td> Av. Minions, 1328, Casa do gru</td>
-                <td> (19) 3642-1234</td>
-            </tr>
-        </table>
-    </section>
+   
     <!-- Rodapé -->
     <footer>
         <div class="footer-content">
