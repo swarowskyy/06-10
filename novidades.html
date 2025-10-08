@@ -56,9 +56,55 @@
             <input type="email" id="email" placeholder="E-mail aqui" required>
             <label>Número de Telefone</label>
             <input type="tel" id="telefone" placeholder="telefone aqui" required>
+            <label>CEP</label>
+            <input type="number" id="cep" placeholder="Endereço aqui" required>
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro"> 
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade"> 
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado">
+            
             <button>Cadastrar</button>
+            <button type="submit" id="confirmarbotao" class="btn-cadastro">Voltar</button>
+
            
         </form>
+            <script>
+         // 1. Selecionar o elemento pelo ID
+        var campoCep = document.getElementById('cep');
+        // 2. Adicionar o event listener para o evento 'blur'(executado quando é retirado o mouse)
+        campoCep.addEventListener('blur', function() {
+            let valorCep  = campoCep.value; // pegar o valor do campoCep
+            fetch("https://viacep.com.br/ws/"+valorCep+"/json/")
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    document.getElementById('logradouro').value = data.logradouro || '';
+                    document.getElementById('bairro').value= data.bairro || '';
+                    document.getElementById('cidade').value= data.localidade || '';
+                    document.getElementById('estado').value= data.estado || '';
+                    mudaborda(0)
+                })
+                .catch(error =>mudaborda(1));
+            });
+             function mudaborda(cor){
+                if(cor == 1){
+                    campoCep.style.border= "4px solid red";
+                }else{
+                    campoCep.style.border="4px solid green";
+                }
+             }
+             // Redirecionar ao clicar no botão Confirmar
+document.getElementById('confirmarbotao').addEventListener('click', function(event) {
+    event.preventDefault(); // impede o envio do formulário
+    window.location.href = "index.html"; // redireciona para a página inicial
+})
+    
+            </script>
+            
     </section>
     <section id="fidelidade" class="products">
         <h2 class="section-title">Fidelidade</h2>

@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -131,9 +133,7 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 
-#cadrastro input[type="text"],
-#cadrastro input[type="email"],
-#cadrastro input[type="tel"] {
+#cadrastro input[type="text"],#cadrastro input[type="email"],#cadrastro input[type="tel"], #cadrastro input[type="number"] {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -312,3 +312,4 @@ footer {
         width: 100%; /* Ocupa a largura total em telas pequenas */
     }
 }
+        
